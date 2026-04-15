@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Core Styling for Dashboard */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.chart-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.08);
+}
+
+.chart-card h3 {
+  margin-top: 0;
+  font-weight: 600;
+  color: #334155;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.canvas-wrapper {
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+/* Dark Mode Overrides for Material Theme */
+[data-md-color-scheme="slate"] .chart-card {
+  background: #1e293b;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+[data-md-color-scheme="slate"] .chart-card h3 {
+  color: #e2e8f0;
+  border-bottom-color: #334155;
+}
+
+/* Header Background Override */
+.md-header {
+  background-color: #000000 !important;
+}
+

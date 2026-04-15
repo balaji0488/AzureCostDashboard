@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Azure Functions
+backend/local.settings.json
+backend/.python_packages/
+backend/.funcignore
+
+# Azurite (Local Storage Emulator)
+azurite_workspace/
+azurite_debug.log
+__blobstorage__/
+__queuestorage__/
+__tablestorage__/
+
+# SQLite Database
+backend/costs.db
+
+# MkDocs
+frontend/site/
+
+# IDEs/Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,28 @@
+site_name: Azure Cost Dashboard
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Dashboard: index.md
+
+extra_css:
+  - css/custom.css
+extra_javascript:
+  - https://alcdn.msauth.net/browser/2.37.0/js/msal-browser.min.js
+  - https://cdn.jsdelivr.net/npm/chart.js
+  - js/auth.js
+  - js/api.js
+  - js/charts.js
